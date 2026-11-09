@@ -1,0 +1,668 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f7f8fc;
+
+    color: #25233a;
+
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   MENU
+================================= */
+
+header {
+    width: 100%;
+
+    background: white;
+
+    padding: 22px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #5d55d9;
+}
+
+nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #55536b;
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #5d55d9;
+}
+
+
+/* ==============================
+   INÍCIO
+================================= */
+
+.inicio {
+    min-height: 650px;
+
+    padding: 80px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #f7f8fc 50%,
+            #eeedff 100%
+        );
+}
+
+.texto {
+    max-width: 600px;
+}
+
+.pequeno {
+    color: #6a61df;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 50px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #6a61df;
+
+    display: block;
+}
+
+.texto > p:not(.pequeno) {
+    color: #6b697a;
+
+    font-size: 17px;
+
+    max-width: 520px;
+
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+
+    background: #6a61df;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 25px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 20px rgba(106, 97, 223, 0.25);
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+
+    background: #5149c9;
+}
+
+
+/* ==============================
+   ILUSTRAÇÃO
+================================= */
+
+.imagem {
+    width: 380px;
+
+    height: 380px;
+
+    background: #e1dfff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+.livro {
+    width: 180px;
+
+    height: 180px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 90px;
+
+    box-shadow:
+        0 15px 40px rgba(60, 55, 120, 0.18);
+}
+
+.decoracao {
+    position: absolute;
+
+    right: 35px;
+
+    bottom: 50px;
+
+    background: white;
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+    box-shadow:
+        0 8px 20px rgba(60, 55, 120, 0.15);
+}
+
+
+/* ==============================
+   SEÇÕES
+================================= */
+
+section:not(.inicio) {
+    padding: 80px 8%;
+}
+
+.titulo {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.titulo h2 {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.titulo > p:last-child {
+    color: #777589;
+}
+
+
+/* ==============================
+   MATÉRIAS
+================================= */
+
+.materias {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.materia {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    border: 1px solid #eeeeee;
+
+    transition: 0.3s;
+}
+
+.materia:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(40, 35, 100, 0.08);
+}
+
+.icone {
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+.azul {
+    background: #e8edff;
+}
+
+.rosa {
+    background: #ffe8f0;
+}
+
+.verde {
+    background: #e4f8ed;
+}
+
+.amarelo {
+    background: #fff4d9;
+}
+
+.materia h3 {
+    margin-bottom: 8px;
+}
+
+.materia p {
+    color: #777589;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+.materia small {
+    color: #777589;
+}
+
+.barra {
+    width: 100%;
+
+    height: 8px;
+
+    background: #eeeeee;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-bottom: 8px;
+}
+
+.progresso {
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+.azul-barra {
+    width: 60%;
+
+    background: #6277e8;
+}
+
+.rosa-barra {
+    width: 75%;
+
+    background: #e979a0;
+}
+
+.verde-barra {
+    width: 40%;
+
+    background: #56b984;
+}
+
+.amarelo-barra {
+    width: 85%;
+
+    background: #e9b84f;
+}
+
+
+/* ==============================
+   ROTINA
+================================= */
+
+.rotina {
+    background: #f0efff;
+}
+
+.agenda {
+    max-width: 800px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.dia {
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 18px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    box-shadow:
+        0 5px 15px rgba(50, 45, 100, 0.05);
+}
+
+.dia > div:first-child {
+    width: 60px;
+
+    text-align: center;
+}
+
+.dia strong {
+    display: block;
+
+    color: #6a61df;
+
+    font-size: 13px;
+}
+
+.dia span {
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+.atividade h3 {
+    margin-bottom: 3px;
+}
+
+.atividade p {
+    color: #777589;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   PROGRESSO
+================================= */
+
+.painel {
+    max-width: 850px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 45px;
+
+    box-shadow:
+        0 10px 30px rgba(40, 35, 100, 0.06);
+}
+
+.numero {
+    min-width: 150px;
+
+    height: 150px;
+
+    border-radius: 50%;
+
+    background: #6a61df;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+.numero span {
+    font-size: 55px;
+}
+
+.painel h3 {
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+.painel p {
+    color: #777589;
+
+    margin-bottom: 20px;
+}
+
+.grande {
+    max-width: 450px;
+
+    height: 10px;
+}
+
+.geral {
+    width: 72%;
+
+    background: #6a61df;
+}
+
+
+/* ==============================
+   RODAPÉ
+================================= */
+
+footer {
+    background: #25233a;
+
+    color: white;
+
+    padding: 40px 8%;
+
+    text-align: center;
+}
+
+footer .logo {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #aaa8b8;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 900px) {
+
+    .materias {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .imagem {
+        width: 300px;
+
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .inicio {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 60px 6%;
+    }
+
+    .texto > p:not(.pequeno) {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .imagem {
+        width: 250px;
+
+        height: 250px;
+    }
+
+    .livro {
+        width: 130px;
+
+        height: 130px;
+
+        font-size: 65px;
+    }
+
+    .materias {
+        grid-template-columns: 1fr;
+    }
+
+    section:not(.inicio) {
+        padding: 60px 6%;
+    }
+
+    .titulo h2 {
+        font-size: 28px;
+    }
+
+    .painel {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+    }
+
+    .grande {
+        width: 100%;
+    }
+
+    .dia {
+        padding: 15px;
+
+        gap: 15px;
+    }
+}
